@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary To Decimal Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header>
+        <h1 class="title">Binary To Decimal Converter</h1>
+        <nav>
+            <span>Made with love by <a href="https://twitter.com/@krishstwt">@krishstwt</a></span>
+            <span> fork it on <a href="https://github.com/krishstwt/basic-learning-projects/tree/main/florinpop17/app-ideas/Bin2Dec">GitHub</a></span>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h3>Binary:</h3>
+            <textarea></textarea>
+        </section>
+        <section>
+            <h3>Decimal:</h3>
+            <div id="output"></div>
+        </section>
+    </main>
+    <script>
+        const textarea = document.getElementsByTagName('textarea').item(0)
+
+        textarea.onkeyup = () => {
+            const matches = (new RegExp('^[0-1]{1,}$','g')).test(textarea.value)
+
+            if (!matches) {
+                alert('Invalid binary!')
+                return
+            }
+
+            document.getElementById('output').innerText = parseInt(textarea.value, 2)
+        }
+    </script>
+</body>
+</html>
