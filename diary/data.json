@@ -1,0 +1,13 @@
+{
+    "$schema": "./schema/data.json",
+    "data": [
+        {
+            "date": "04-06-2023",
+            "tweet": "https://twitter.com/krishstwt/status/1665256205584076807"
+        },
+        {
+            "date": "05-05-2023",
+            "tweet": "https://twitter.com/krishstwt/status/1665804240546062336"
+        }
+    ]
+}
