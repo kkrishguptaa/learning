@@ -19,26 +19,14 @@
     <main>
         <section>
             <h3>Binary:</h3>
-            <textarea></textarea>
+            <textarea id="input"></textarea>
+            <p>Info: All characters that are not 1 or 0 are removed from the textbox automatically!</p>
         </section>
         <section>
             <h3>Decimal:</h3>
             <div id="output"></div>
         </section>
     </main>
-    <script>
-        const textarea = document.getElementsByTagName('textarea').item(0)
-
-        textarea.onkeyup = () => {
-            const matches = (new RegExp('^[0-1]{1,}$','g')).test(textarea.value)
-
-            if (!matches) {
-                alert('Invalid binary!')
-                return
-            }
-
-            document.getElementById('output').innerText = parseInt(textarea.value, 2)
-        }
-    </script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
