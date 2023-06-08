@@ -7,12 +7,12 @@ level: beginner
 tech: [html, css, javascript]
 featured: false
 origin:
-  issue: 2
+  issue: 1
   repo: florinpop17/app-ideas
 ---
 
 <div align="center">
-  <img src="https://api.dicebear.com/6.x/shapes/svg?seed=Bin2Dec" height="50px" width="50px" />
+  <img src="https://api.dicebear.com/6.x/shapes/svg?seed=Bin2Dec" height="100px" width="100px" />
   <br />
   <h1>Bin2Dec</h1>
   <p>Simply Beautiful Binary to Decimal Converter</p>
