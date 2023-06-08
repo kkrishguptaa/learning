@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Border Radius Previewer</h1>
+        <nav>
+            <span>Made with love by <a href="https://twitter.com/@krishstwt">@krishstwt</a></span>
+            <span> fork it on <a
+                    href="https://github.com/krishstwt/basic-learning-projects/tree/main/projects/Border-Radius-Previewer">GitHub</a></span>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label>Top Left:</label>
+                <input id="topleft" type="number" value="0" min="0">
+                <select id="topleftunit">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+                    <option value="vh">vh</option>
+                </select>
+            </div>
+            <div>
+                <label>Top Right:</label>
+                <input id="topright" type="number" value="0" min="0">
+                <select id="toprightunit">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+                    <option value="vh">vh</option>
+                </select>
+            </div>
+            <div>
+                <label>Bottom Left:</label>
+                <input id="bottomleft" type="number" value="0" min="0">
+                <select id="bottomleftunit">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+                    <option value="vh">vh</option>
+                </select>
+            </div>
+            <div>
+                <label>Bottom Right:</label>
+                <input id="bottomright" type="number" value="0" min="0">
+                <select id="bottomrightunit">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+                    <option value="vh">vh</option>
+                </select>
+            </div>
+        </section>
+        <section>
+            <div id="box"></div>
+        </section>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
