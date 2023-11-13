@@ -7,6 +7,6 @@
 
 ## 💻 Technologies
 
-| Technologies |
-| ------------ |
-| [HTML/CSS/JS](https://github.com/xkrishguptaa/learning/tree/main/frontend/html-css-js)  |
+- [Static](https://github.com/xkrishguptaa/learning/tree/main/frontend/static) (HTML/CSS/JS)
+- React
+- Next

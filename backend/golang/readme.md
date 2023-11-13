@@ -13,8 +13,9 @@
 
 ## 🖥️ Projects
 
-| Name | Description | Deployment | Repository | Images |
-| ---- | ----------- | ---- | ---------- | ------ |
+| Name | Repository | Deployment | Additional Links |
+| ---- | ----------- | ---- | ---------- |
+| `Go Todo API v2` | [![Repository](https://img.shields.io/badge/Repository-2965F1?style=for-the-badge&logo=gitlab&logoColor=fff)](https://gitlab.com/xkrishguptaa/go-todo-api) | [![Deployed on Render.com](https://img.shields.io/badge/Open%20Deployed-2965F1?style=for-the-badge&logo=render&logoColor=84E4C2&labelColor=2965F1)](https://go-todo-api2.onrender.com/) | [![Image on Docker Hub](https://img.shields.io/badge/View%20On%20Dockerhub-2965F1?style=for-the-badge&logo=docker&logoColor=fff)](https://hub.docker.com/r/xkrishguptaa/go-todo-api) [![View Postman Collection](https://img.shields.io/badge/View%20Postman%20Collection-2965F1?style=for-the-badge&logo=postman&logoColor=fff)](https://go.postman.co/collections/30796221-e1bec2da-b843-4502-8057-c2a3cb46327c) |
 
 ## 📚 Resources
 

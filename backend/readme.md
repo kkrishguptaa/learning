@@ -7,8 +7,6 @@
 
 ## 💻 Technologies
 
-| Technologies |
-| ------------ |
-| NodeJS       |
-| [GoLang](https://github.com/xkrishguptaa/learning/tree/main/backend/golang) |
-| [Rust](https://github.com/xkrishguptaa/learning/tree/main/backend/rust) |
+- NodeJs
+- [Golang](https://github.com/xkrishguptaa/learning/tree/main/backend/golang)
+- [Rust](https://github.com/xkrishguptaa/learning/tree/main/backend/rust)

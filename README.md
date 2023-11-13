@@ -7,14 +7,12 @@
 
 ## [🌐 Frontend](https://github.com/xkrishguptaa/learning/tree/main/frontend)
 
-| Technologies |
-| ------------ |
-| [HTML/CSS/JS](https://github.com/xkrishguptaa/learning/tree/main/frontend/html-css-js)  |
+- [Static](https://github.com/xkrishguptaa/learning/tree/main/frontend/static) (HTML/CSS/JS)
+- React
+- Next
 
 ## [🖥️ Backend](https://github.com/xkrishguptaa/learning/tree/main/backend)
 
-| Technologies |
-| ------------ |
-| NodeJS       |
-| [GoLang](https://github.com/xkrishguptaa/learning/tree/main/backend/golang) |
-| [Rust](https://github.com/xkrishguptaa/learning/tree/main/backend/rust) |
+- NodeJs
+- [Golang](https://github.com/xkrishguptaa/learning/tree/main/backend/golang)
+- [Rust](https://github.com/xkrishguptaa/learning/tree/main/backend/rust)
