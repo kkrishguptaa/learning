@@ -1,4 +1,4 @@
-name: Generate Files
+name: yarn generate
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  name:
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
