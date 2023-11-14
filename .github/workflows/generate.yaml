@@ -1,10 +1,10 @@
 name: Generate Files
 
 on:
-  - push:
-  - workflow_dispatch:
-  - schedule:
-      cron: '0 0 * * *'
+  push:
+  workflow_dispatch:
+  schedule: 
+    - cron: '0 0 * * *'
 
 jobs:
   name:
@@ -35,15 +35,13 @@ jobs:
           skip_checkout: true
           branch: "docs-generate-${{ github.sha }}"
           create_branch: true
-      - name: create PR with formatted files
-        if: steps.format-files.outputs.changes_detected == 'true'
+      - if: steps.format-files.outputs.changes_detected == 'true'
         id: create-pr
         name: gh pr create
         run: git checkout docs-generate-${{ github.sha }} && gh pr create --base main --head docs-generate-${{ github.sha }} --title 'Merge formatting into main' --body 'Created by Github action'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: merge PR with adjusted formatting
-        if: steps.format-files.outputs.changes_detected == 'true'
+      - if: steps.format-files.outputs.changes_detected == 'true'
         id: merge-pr
         name: gh pr merge
         run: gh pr merge --admin --merge --subject 'Merge generated docs' --delete-branch
