@@ -1,0 +1,38 @@
+name: Generate Files
+
+on: [push]
+
+jobs:
+  name:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm i -g yarn
+      - run: yarn --frozen-lockfile
+      - run: yarn generate
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        id: format-files
+        with:
+          commit_message: "docs: generate readme"
+          skip_checkout: true
+          branch: "docs-generate-${{ github.sha }}"
+          create_branch: true
+
+      # create PR using GitHub CLI if files were formatted
+      - name: create PR with formatted files
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: create-pr
+        run: git checkout docs-generate-${{ github.sha }} && gh pr create --base main --head docs-generate-${{ github.sha }} --title 'Merge formatting into main' --body 'Created by Github action'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # merge PR using GitHub CLI
+      - name: merge PR with adjusted formatting
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: merge-pr
+        run: gh pr merge --admin --merge --subject 'Merge formatting' --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
