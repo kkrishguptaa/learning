@@ -1,0 +1,51 @@
+name: Generate Files
+
+on:
+  - push
+  - workflow_dispatch:
+  - schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  name:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        id: checkout
+        name: git checkout
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+        id: setup-node
+        name: nvm use node 20
+      - run: npm i -g yarn
+        id: setup-yarn
+        name: npm i yarn
+      - run: yarn --frozen-lockfile
+        id: install-deps
+        name: yarn install
+      - run: yarn generate
+        id: generate-readme
+        name: yarn generate
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        id: format-files
+        name: git commit
+        with:
+          commit_message: "docs: generate readme"
+          skip_checkout: true
+          branch: "docs-generate-${{ github.sha }}"
+          create_branch: true
+      - name: create PR with formatted files
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: create-pr
+        name: gh pr create
+        run: git checkout docs-generate-${{ github.sha }} && gh pr create --base main --head docs-generate-${{ github.sha }} --title 'Merge formatting into main' --body 'Created by Github action'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: merge PR with adjusted formatting
+        if: steps.format-files.outputs.changes_detected == 'true'
+        id: merge-pr
+        name: gh pr merge
+        run: gh pr merge --admin --merge --subject 'Merge generated docs' --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

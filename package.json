@@ -1,0 +1,30 @@
+{
+  "name": "learning",
+  "version": "latest",
+  "description": "Records of me learning by doing ✨",
+  "repository": "https://github.com/xkrishguptaa/learning",
+  "author": "Krish Gupta <xkrishguptaa@gmail.com>",
+  "license": "GPL-3.0+",
+  "private": true,
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "lodash": "^4.17.21",
+    "pino": "^8.16.1",
+    "yaml": "^2.3.4",
+    "zod": "^3.22.4"
+  },
+  "scripts": {
+    "predocument": "tsc",
+    "document": "node tools/dist/scripts/document.js",
+    "pregenerate": "tsc",
+    "generate": "node tools/dist/scripts/generate.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.201",
+    "@types/node": "^20.9.0",
+    "pino-pretty": "^10.2.3",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2",
+    "zod-to-json-schema": "^3.21.4"
+  }
+}
