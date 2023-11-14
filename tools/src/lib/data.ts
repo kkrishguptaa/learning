@@ -13,7 +13,7 @@ const entries = z.object(schema).parse(Object.fromEntries(Object.entries(schema)
   ];
 })));
 
-const technologies = _.uniq(entries.projects.flatMap(project => project.technologies)).sort((a, b) => a > b ? -1 :1).map(technology => {
+const technologies = _.uniq(entries.projects.flatMap(project => project.technologies)).sort((a, b) => a < b ? -1 :1).map(technology => {
     return {
       name: technology,
       projects: entries.projects.filter(project => project.technologies.includes(technology))
