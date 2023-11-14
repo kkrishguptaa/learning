@@ -38,7 +38,7 @@ jobs:
       - if: steps.format-files.outputs.changes_detected == 'true'
         id: create-pr
         name: gh pr create
-        run: git checkout docs-generate-${{ github.sha }} && gh pr create --base main --head docs-generate-${{ github.sha }} --title 'Merge formatting into main' --body 'Created by Github action'
+        run: git checkout docs-generate-${{ github.sha }} && gh pr create --base main --head docs-generate-${{ github.sha }} --title 'Merge generated files into main' --body 'Created by Github action'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - if: steps.format-files.outputs.changes_detected == 'true'
