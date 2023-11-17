@@ -38,7 +38,7 @@
         Download, Optimize and Save Images from the Web 🔥 1.5k+ NPM Downloads
       </td>
       <td>
-        Todo API in Go with MongoDB 🚀
+        Todo API in Go with MongoDB 🚀 Supports retrieval, creation, modification and deletion of Todos
       </td>
       <td>
         Economy Management solution for one of India&#x27;s largest Hackathons
