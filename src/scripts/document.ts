@@ -4,6 +4,7 @@ import * as path from "path";
 
 import { schema } from "../lib/schema";
 import { z } from "zod";
+import { dir } from "../lib/const";
 
 const jsonSchema = Object.fromEntries(
   Object.entries(schema).map(([name, schema]) => {
@@ -20,7 +21,7 @@ const jsonSchema = Object.fromEntries(
 
 Object.entries(jsonSchema).forEach(([name, schema]) => {
   fs.writeFileSync(
-    path.join(__dirname, `../../../.vscode/models/${name}.json`),
+    path.join(dir.models, `${name}.json`),
     JSON.stringify(schema, null, 2)
   );
 });

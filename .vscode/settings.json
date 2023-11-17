@@ -1,5 +1,5 @@
 {
   "yaml.schemas": {
-    ".vscode/models/projects.json": "data/projects.yaml"
+    "models/projects.json": "data/projects.yaml"
   }
 }

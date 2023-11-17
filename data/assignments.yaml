@@ -1,0 +1,68 @@
+data:
+  - name: Bin2Dec
+    logo: https://gitlab.com/xkrishguptaa/bin2dec/-/raw/main/assets/logo.png
+    description: Simply Beautiful Binary to Decimal Converter ✨
+    repository:
+      host: gitlab
+      username: xkrishguptaa
+      slug: bin2dec
+    links:
+      - text: View Deployed
+        link: https://xkrishguptaa.gitlab.io/bin2dec
+        primary: true
+        button:
+          icon: googlechrome
+    technologies: [HTML, CSS, JavaScript, Gitlab Pages, Gitlab CI]
+  - name: Border Radius Previewer
+    logo: https://gitlab.com/xkrishguptaa/border-radius-previewer/-/raw/main/assets/logo.png
+    description: Minimalistic Border Radius Previewer 💄
+    repository:
+      host: gitlab
+      username: xkrishguptaa
+      slug: border-radius-previewer
+    links:
+      - text: View Deployed
+        link: https://xkrishguptaa.gitlab.io/border-radius-previewer
+        primary: true
+        button:
+          icon: googlechrome
+    technologies: [HTML, CSS, JavaScript, Gitlab Pages, Gitlab CI]
+  - name: CSV2JSON
+    logo: https://gitlab.com/xkrishguptaa/csv2json/-/raw/main/assets/logo.png
+    description: Minimalistic CSV2JSON Converter 🎨
+    repository:
+      host: gitlab
+      username: xkrishguptaa
+      slug: csv2json
+    links:
+      - text: View Deployed
+        link: https://xkrishguptaa.gitlab.io/csv2json
+        primary: true
+        button:
+          icon: googlechrome
+    technologies: [HTML, CSS, JavaScript, Gitlab Pages, Gitlab CI]
+  - name: Go Todo API
+    logo: https://gitlab.com/xkrishguptaa/go-todo-api/-/raw/main/assets/logo.png
+    description: Simple Todo API in Go 🚀
+    repository:
+      host: gitlab
+      username: xkrishguptaa
+      slug: go-todo-api
+      url: https://gitlab.com/xkrishguptaa/go-todo-api/-/releases/v1.0.0
+    links:
+      - text: View Deployed
+        link: https://go-todo-api-sa9e.onrender.com
+        primary: true
+        button:
+          icon: render
+      - text: DockerHub Image
+        link: https://hub.docker.com/layers/xkrishguptaa/go-todo-api/e6679481a6ec931de9615fb1d5055694a2bae894/images/sha256-ca56aa7d23916a342460fd3bd59e181b79c6935ed775a0f17aacc3bef6da738f?context=repo
+        primary: false
+        button:
+          icon: docker
+      - text: Postman Documentation
+        link: https://go.postman.co/collections/30796221-cdf39375-8b13-4130-95c1-d0db3687e53e
+        primary: false
+        button:
+          icon: postman
+    technologies: [Go, Gin Gonic, Render, Docker, Gitlab CI]

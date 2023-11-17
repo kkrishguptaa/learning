@@ -32,14 +32,18 @@
                   "username": {
                     "type": "string"
                   },
-                  "project": {
+                  "slug": {
                     "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri"
                   }
                 },
                 "required": [
                   "host",
                   "username",
-                  "project"
+                  "slug"
                 ],
                 "additionalProperties": false
               },
@@ -58,6 +62,18 @@
                     "primary": {
                       "type": "boolean",
                       "default": false
+                    },
+                    "button": {
+                      "type": "object",
+                      "properties": {
+                        "icon": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "icon"
+                      ],
+                      "additionalProperties": false
                     }
                   },
                   "required": [

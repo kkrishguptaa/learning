@@ -15,9 +15,9 @@
   },
   "scripts": {
     "predocument": "tsc",
-    "document": "node tools/dist/scripts/document.js",
+    "document": "node dist/scripts/document.js",
     "pregenerate": "tsc",
-    "generate": "node tools/dist/scripts/generate.js"
+    "generate": "node dist/scripts/generate.js"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.201",

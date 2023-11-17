@@ -5,11 +5,12 @@ import * as z from 'zod';
 
 import { schema } from './schema';
 import _ from 'lodash';
+import { dir } from './const';
 
 const entries = z.object(schema).parse(Object.fromEntries(Object.entries(schema).map(([name, schema]) => {
   return [
     name,
-    schema.parse(yaml.parse(fs.readFileSync(path.join(__dirname, `../../../data/${name}.yaml`), 'utf8')).data).sort((a, b) => a.name < b.name ? -1 : 1),
+    schema.parse(yaml.parse(fs.readFileSync(path.join(dir.data, `${name}.yaml`), 'utf8')).data).sort((a, b) => a.name < b.name ? -1 : 1),
   ];
 })));
 
@@ -20,7 +21,21 @@ const technologies = _.uniq(entries.projects.flatMap(project => project.technolo
     };
   });
 
+const threeProjectGroups = _.chunk(entries.projects, 3);
+const threeAssignmentGroups = _.chunk(entries.assignments, 3);
+
 export const data = {
-  ...entries,
-  technologies
+  technologies,
+  projects: {
+    groups: {
+      three: threeProjectGroups,
+    },
+    _: entries.projects,
+  },
+  assignments: {
+    groups: {
+      three: threeAssignmentGroups,
+    },
+    _: entries.assignments
+  },
 }
