@@ -24,3 +24,59 @@ data:
         button:
           icon: postman
     technologies: [Go, Gin Gonic, MongoDB, BSON, Render, Docker, Gitlab CI]
+  - name: Hack The Mountains Discord Bot
+    logo: https://github.com/xkrishguptaa/bot-dc-htm/assets/135469703/8aa8bd79-cfaf-4f9e-b47a-62a5bd152e0c
+    description: Economy Management solution for one of India's largest Hackathons
+    repository:
+      host: github
+      username: xkrishguptaa
+      slug: bot-dc-htm
+    links:
+      - text: HTM Discord Server
+        link: https://bit.ly/HackTheMountains
+        primary: true
+        button:
+          icon: discord
+    technologies: [NodeJs, JavaScript, TypeScript, DiscordJs, Sapphire Framework, Prisma, MySQL, Planetscale, Docker, Railway]
+  - name: Reseter.css / Gardevoir
+    logo: https://github.com/xkrishguptaa/gardevoir/raw/main/.github/assets/gardevoir.png
+    description: The Modern CSS Reset 🚀 with 5m+ JSDelivr Hits & 70k+ NPM Downloads
+    repository:
+      host: github
+      username: xkrishguptaa
+      slug: gardevoir
+    links:
+      - text: Install On Your Website
+        link: https://github.com/xkrishguptaa/gardevoir/tree/main?tab=readme-ov-file#-installation
+        primary: true
+        button:
+          icon: github
+    technologies: [CSS, SCSS, Sass, Less, Stylus, PostCSS, Styled-Components, NPM]
+  - name: Trevenant
+    logo: https://github.com/xkrishguptaa/trevenant/raw/main/.github/assets/trevenant.png
+    description: Beautiful Opinionated Logging for Node.js ✍️ with 1.5k+ NPM Downloads
+    repository:
+      host: github
+      username: xkrishguptaa
+      slug: trevenant
+    links:
+      - text: Install In Your Project
+        link: https://github.com/xkrishguptaa/trevenant?tab=readme-ov-file#-installation
+        primary: true
+        button:
+          icon: github
+    technologies: [NodeJs, JavaScript, TypeScript, DayJs, NPM]
+  - name: Azelf
+    logo: https://github.com/xkrishguptaa/azelf/raw/main/.github/assets/azelf.png
+    description: Download, Optimize and Save Images from the Web 🔥 1.5k+ NPM Downloads
+    repository:
+      host: github
+      username: xkrishguptaa
+      slug: azelf
+    links:
+      - text: Install In Your Project
+        link: https://github.com/xkrishguptaa/azelf?tab=readme-ov-file#-installation
+        primary: true
+        button:
+          icon: github
+    technologies: [NodeJs, JavaScript, TypeScript, OptiPNG, PNGCrush, SVGO, Request, Sharp, Trevenant, NPM]

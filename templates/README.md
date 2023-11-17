@@ -14,7 +14,7 @@
   {{#each this}}
     <th>
       <a href="{{repository.url}}">
-        <img src="{{logo}}" height="24px" width="24px" alt="{{name}}'s logo" />
+        <img src="{{logo}}" height="48px" width="48px" alt="{{name}}'s logo" />
         <br />
         <b>{{name}}</b>
       </a>
@@ -35,9 +35,9 @@
         {{#each links}}
           <a href="{{link}}" title="{{text}} {{../name}}">
           {{#if primary}}
-            <img src="https://img.shields.io/badge/{{urlify text}}-2965F1?style=for-the-badge&logoColor=fff&labelColor=2965F1&logo={{button.icon}}" />
+            <img src="https://img.shields.io/badge/{{urlify text}}-2965F1?style=for-the-badge&labelColor=2965F1&logoColor=ffffff&logo={{button.icon}}" />
           {{else}}
-            <img src="https://img.shields.io/badge/{{urlify text}}-eee?style=for-the-badge&logo={{button.icon}}" />
+            <img src="https://img.shields.io/badge/{{urlify text}}-eeeeee?style=for-the-badge&labelColor=eeeeee&logo={{button.icon}}" />
           {{/if}}
           </a>
           {{#unless @last}}
@@ -61,7 +61,7 @@
 
 {{/each}}
 
-## 💻 Assignments
+## 🔖 Assignments
 
 {{#each assignments.groups.three}}
 
@@ -70,7 +70,7 @@
   {{#each this}}
     <th>
       <a href="{{repository.url}}">
-        <img src="{{logo}}" height="24px" width="24px" alt="{{name}}'s logo" />
+        <img src="{{logo}}" height="48px" width="48px" alt="{{name}}'s logo" />
         <br />
         <b>{{name}}</b>
       </a>
@@ -91,9 +91,9 @@
         {{#each links}}
           <a href="{{link}}" title="{{text}} {{../name}}">
           {{#if primary}}
-            <img src="https://img.shields.io/badge/{{urlify text}}-2965F1?style=for-the-badge&logoColor=fff&labelColor=2965F1&logo={{button.icon}}" />
+            <img src="https://img.shields.io/badge/{{urlify text}}-2965F1?style=for-the-badge&labelColor=2965F1&logoColor=ffffff&logo={{button.icon}}" />
           {{else}}
-            <img src="https://img.shields.io/badge/{{urlify text}}-eee?style=for-the-badge&logo={{button.icon}}" />
+            <img src="https://img.shields.io/badge/{{urlify text}}-eeeeee?style=for-the-badge&labelColor=eeeeee&logo={{button.icon}}" />
           {{/if}}
           </a>
           {{#unless @last}}
