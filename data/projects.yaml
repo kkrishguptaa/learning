@@ -1,7 +1,7 @@
 data:
   - name: Go Todo API v2
     logo: https://gitlab.com/xkrishguptaa/go-todo-api/-/raw/main/assets/logo.png
-    description: Todo API in Go with MongoDB 🚀
+    description: Todo API in Go with MongoDB 🚀 Supports retrieval, creation, modification and deletion of Todos
     repository:
       host: gitlab
       username: xkrishguptaa
