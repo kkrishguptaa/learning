@@ -1,4 +1,4 @@
-<div>
+<div align="center">
   <img src="https://github.com/xkrishguptaa.png" height="100px" width="100px" />
   <br />
   <h1>Learning</h1>
