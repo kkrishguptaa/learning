@@ -20,11 +20,11 @@
     "generate": "node dist/scripts/generate.js"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.201",
-    "@types/node": "^20.9.0",
-    "pino-pretty": "^10.2.3",
-    "tsc": "^2.0.4",
-    "typescript": "^5.2.2",
-    "zod-to-json-schema": "^3.21.4"
+    "@types/lodash": "4.14.202",
+    "@types/node": "20.10.4",
+    "pino-pretty": "10.3.0",
+    "tsc": "2.0.4",
+    "typescript": "5.3.3",
+    "zod-to-json-schema": "3.22.3"
   }
 }
