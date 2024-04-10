@@ -24,7 +24,7 @@
     "@types/node": "20.12.7",
     "pino-pretty": "11.0.0",
     "tsc": "2.0.4",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "zod-to-json-schema": "3.22.5"
   }
 }
