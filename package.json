@@ -20,7 +20,7 @@
     "generate": "node dist/scripts/generate.js"
   },
   "devDependencies": {
-    "@types/lodash": "4.17.1",
+    "@types/lodash": "4.17.3",
     "@types/node": "20.12.12",
     "pino-pretty": "11.0.0",
     "tsc": "2.0.4",
