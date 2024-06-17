@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/lodash": "4.17.5",
-    "@types/node": "20.14.2",
+    "@types/node": "20.14.4",
     "pino-pretty": "11.2.1",
     "tsc": "2.0.4",
     "typescript": "5.4.5",
