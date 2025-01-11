@@ -27,7 +27,7 @@ jobs:
       - run: yarn generate
         id: generate-readme
         name: yarn generate
-      - uses: stefanzweifel/git-auto-commit-action@8621497c8c39c72f3e2a999a26b4ca1b5058a842 # v5
+      - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5
         id: format-files
         name: git commit
         with:
