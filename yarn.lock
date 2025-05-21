@@ -251,6 +251,6 @@ zod-to-json-schema@3.24.5:
   integrity sha512-/AuWwMP+YqiPbsJx5D6TfgRTc4kTLjsh5SOcd4bLsfUg2RcEXrFMJl1DGgdHy2aCfsIA/cr/1JM0xcB2GZji8g==
 
 zod@^3.22.4:
-  version "3.25.8"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.8.tgz#36f77c9ade89428c75803b757718eef5a48f92e2"
-  integrity sha512-iJPWX8HoZ2VE21VrhHGU9jVo/kVDUQyqM9vF0MxDhW/fp2sAl1eVwGJgiYZdHGiMwQJImXIW80lKk0MnfDxqiQ==
+  version "3.25.12"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.12.tgz#f9e360a6e9a10be0e2c9282ca7ec6305936c953f"
+  integrity sha512-A8e9eiwm2L5YEupdjn1YcxL1ZDWuL3Bc4JKvLwUrpKZZtRUDOijR7XXsV5WMuUCZPc1tFYO5yfH14STI08MquA==
